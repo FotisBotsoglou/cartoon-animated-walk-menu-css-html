@@ -1,0 +1,119 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 35vh;
+    background-image: linear-gradient(to bottom,rgb(14, 200, 233) 70%,rgb(26, 254, 26) 100%)
+   
+}
+:root{
+    font-size: 2rem;
+    font-family: cursive;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+    
+
+}
+ul li{
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 0 2px 3px gray;
+    border-radius: 10px;
+    background-color: grey;
+    opacity: 0.6;
+}
+.cont{
+    display: flex;
+   
+    align-items: flex-end;
+    margin-bottom: 10px;
+
+}
+[class^="frame"]{
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    
+    background-image: url(./sprite.png);
+    background-size: 600px 100px;
+    
+    
+    animation-name: sprite,all;
+    
+    animation-duration: 1.5s,7s;
+    animation-iteration-count: infinite,1;
+    
+    animation-fill-mode: none,forwards;
+    
+    
+    
+    
+    
+    
+}
+.frame1{
+    background-position: 100px 0;
+    
+}
+@keyframes all{
+    100%{
+        transform: translateX(1700px);
+    }
+    
+    
+}
+@keyframes sprite{
+    from{
+        background-position-x:0 ;
+    }
+    16.6%{
+        background-position-x: 0;
+    }
+    16.7%{
+        background-position-x: 100px;
+        
+    }
+    33.2%{
+        background-position-x: 100px;
+        
+    }
+    33.3%{
+        background-position-x: 200px;
+    }
+    49.9%{
+        background-position-x: 200px;
+    }
+    50%{
+        background-position-x: 300px;
+    }
+    66.6%{
+        background-position-x: 300px;
+    }
+    66.7%{
+        background-position-x: 400px;
+    }
+    83.2%{
+        background-position-x: 400px;
+    }
+    83.3%{
+        background-position-x: 500px;
+    }
+   
+    99.9%{
+        background-position-x: 500px;
+    }
+    100%{
+        background-position-x: 0;
+    }
+    
+    
+    
+
+}
